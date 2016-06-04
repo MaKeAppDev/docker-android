@@ -22,7 +22,7 @@ ENV PATH $PATH:$GRADLE_HOME/bin
 ENV ANDROID_HOME /usr/local/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
-RUN echo y | android update sdk --filter platform-tools,build-tools-23.0.3,sys-img-armeabi-v7a-android-23,android-23,extra-android-support --no-ui --all
+RUN echo y | android update sdk --filter platform-tools,build-tools-23.0.3,sys-img-armeabi-v7a-android-23,android-23,extra-android-support,addon-google_apis_x86-google-23,extra-android-m2repository,extra-google-m2repository,extra-google-google_play_services --no-ui --all
 
 RUN which adb android gradle
 

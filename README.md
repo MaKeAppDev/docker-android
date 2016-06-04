@@ -3,6 +3,7 @@
 
 ### Installed Packages
 - open jdk 9
+- Gradle 2.13
 - Android SDK: r24.4.1
 - Build tools: 23.0.3
 - Android API: 23
