@@ -27,8 +27,8 @@ RUN echo "no" | android create avd \
                 --skin WVGA800 \
                 --sdcard 512M
 ENV HOME /root
-ADD wait-for-emulator /usr/local/bin/
-ADD run /usr/local/bin/
+ADD wait-for-emulator.sh /usr/local/bin/
+ADD run.sh /usr/local/bin/
 
 # Cleaning
 RUN apt-get clean
