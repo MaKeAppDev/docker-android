@@ -26,6 +26,9 @@ RUN echo "no" | android create avd \
                 --abi armeabi-v7a \
                 --skin WVGA800 \
                 --sdcard 512M
+ENV HOME /root
+ADD wait-for-emulator /usr/local/bin/
+ADD run /usr/local/bin/
 
 # Cleaning
 RUN apt-get clean
